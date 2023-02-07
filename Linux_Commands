@@ -1,0 +1,155 @@
+Updating Kali Linux and tools to the new versions, 
+>> $apt-get update
+
+Upgrading Kali tools to new packages 
+>> $apt-get upgrade 
+
+Upgrading to a newer version of Operating System, 
+>> $apt-get dist upgrade
+
+The command shows the version of the Linux kernel that you're currently using 
+>> $uname -r
+
+Decypeting a base 64 file using terminal on linux 
+>> echo "encoded string" | base64 -d
+
+Encrypting and Decrypting a txt file using CMD on window 
+Encrypting 	>> certutil -encode filename.txt outputfilename.txt
+Decrypting	>> certutil -decode filename.txt outputfilename.txt
+
+Encrypting and Decrypting a png file using CMD on window
+Encrypting 	>> certutil -encode filename.png outputfilename.txt
+Decrypting	>> certutil -decode filename.txt outputfilename.png
+
+CD - It stands for "change directory" It changes the working directory to the specified one.
+Switch to the "images" directory		>> cd images
+Switch to the previous directory		>> cd -
+Switch to the parent directory		>> cd ..
+Switch to the home directory		>> cd
+
+
+MKDIR - It stands for "make directory" It creates a directory inside the current directory.
+Creates a single directory			>> mkdir data/
+Creates entire directory structure	>> mkdir -p data/revenue/
+
+
+PWD - It stands for "print working directory". It outputs the absolute path of the directory you are in.
+>>pwd		/home/swapnakpanda/
+
+LS - It stands for "list" It lists out all files and, directories that exists inside a directory.
+Lists all inside current working directory	>> ls
+Lists all inside /home/				>> ls /home/
+Lists all including hidden files			>> ls -a
+
+
+CP - It stands for "copy" It copies a file or, directory to another place.
+Copies the file file1.txt to file2.txt		>> cp file1.txt file2.txt
+Copies entire directory "dir1" to "dir2"		>> cp -r dir1/ dir2/
+
+MV - It stands for "move". It moves files and, directories to another directory. It can be used to rename a file/directory.
+Moves the file						>> mv file1.js images/
+Renames the file					>> mv file1.js file2.js
+
+TOUCH - It's used to create a new empty file. It can also be used to change the modification date of a file to current time.
+Creates a new empty file "new_file"			>> touch new_file
+Changes the modification time				>> touch -m old_file
+
+CAT - It stands for "concatenate". It is used to view, create and concatenate files.
+Lists the contents of file1.txt to standard output   >> cat file.txt
+Creates a new file					       >> cat > file.txt
+Concatenates file1 & file2 to file3		       >> cat file1 file2 > file3
+
+RM - It stands for "remove". It's used to remove files and, directories.
+Removes a file						        >> rm file1.txt
+Removes an empty directory				>> rm -r dir1
+Removes any directory					>> rm -rf dir2
+Removing a file secret in my home directory       >> rm ~/secret
+    
+FIND - It's used to search for files in a directory hierarchy based on regular expression.
+Searches for anything whose name is "sha.txt"	>> find ./ -name "sha.txt"
+    >> find ./ -type f -name "*.py"
+GREP - It searches for a line in a file that matches a regular expression.  Grep stands for Global Regular Expression Print
+Lists all lines that contain "hello"			>> grep "hello" message.txt
+Displays the # of lines that contain "hi"		>> grep -c "hi" message.txt
+
+HEAD - It outputs first few lines of a file.
+Outputs first 10 lines						>> head message.txt
+Outputs first 5 lines						>> head -n 5 message.txt
+
+TAIL - It outputs the last few lines of a file.
+Outputs last 10 lines						>> tail message.txt
+Outputs last 5 lines						>> tail -n 5 message.txt
+Shows new entries in app.log				>> tail -f app.log
+as and when they get added
+
+DIFF - It is used to compare the contents of two files line by line.
+Lists out all differences					>> diff /dir1/source.java /dir2/source.java
+
+ALIAS - It allows you to define temporary aliases for the current session. Aliases allow you to execute one or, more commands.
+Creates a new alias "lsa"					>> alias lsa="ls -a"
+Lists all aliases for the current session		>> alias
+
+CHMOD - It lets you change the mode (permission) of a file.
+The basic permissions a file can have are
+     ❍ r (read)
+     ❍ w (write)
+     ❍ x (execute)
+Makes the file executable				       	>> chmod +x "hello.s"
+
+SUDO - It stands for "superuser do".It allows you to act as a superuser or, a root user while you are running a specific command.
+>> sudo apt install python
+
+TAR
+Creates a tar file (abc.tar) using all files with extension .c		>> tar -cvf abc.tar *.c
+Extract files from abc.tar					>> tar -xvf abc.tar
+Creates a tar file using gzip.				>> tar -cvzf abc.tar.gz *.c
+Extract files from a gzip tar file.				>> tar -xvzf abc.tar.gz
+
+ECHO - It displays the given text in the terminal
+
+WHICH - Shows the directory where the command is present 
+
+WHOAMI - Displays the username who currently is using this session
+
+MAN - Displays the manual page of any command
+
+CHOWN - To change the ownership
+
+DU - To check how much space a file or a directory takes
+
+PS - Lists the processes that the current shell session is running
+
+KILL - To kill (terminate) a process
+
+FREE - Show the amount of free memory
+
+VMSTAT 4 (vmstat4) - Every 4 seconds, show statistics
+
+IOTOP (iotop) - Displays the disk IO usage details
+
+SYSTEMCTL (systemctl) - Manage systemd and services
+
+JOUENALCTL (journalctl) - To view systemd, kernel and journal logs
+
+ENV (env) - Prints list of environment variables
+
+HOST (host) - Used for DNS lookup operations
+
+HOSTNAME (hostname) - Used to obtain the DNS name
+
+PING (ping) - Checks the network connectivity b/w host and server
+
+CURL (curl) - To transfer data to or from a server
+
+WGET (wget) - To retrieve/download content from the internet
+
+HISTORY (history) - Displays the commands you used in the past.
+
+CLEAR (clear) - Clear the terminal window
+
+EXIT (exit) - It ends a shell session and, closes the terminal you are using.
+
+
+
+
+
